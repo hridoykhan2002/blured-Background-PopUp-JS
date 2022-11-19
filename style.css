@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(img/pexels-sam-kolder-2387873.jpg) center;
+    background-size: cover;
+    transition: all ease-in-out .4s;
+}
+.heading{
+    text-shadow: 2px 2px 4px grey;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+button{
+    outline: none;
+    padding: 4px 15px;
+    border: 1px solid black;
+}
+.poyp-btn{
+    outline: none;
+    padding: 4px 15px;
+    border: 1px solid black;
+}
+.close{
+    outline: none;
+    padding: 4px 15px;
+    border: 1px solid black;
+}
+.active.container-fluid{
+    filter: blur(5px) brightness(.7);
+
+}
+
+.popup-container{
+    position: fixed;
+    left: 50%;
+    width: 400px;
+    height: 300px;
+    top: 30%;
+    transform: translateX(-50%);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: url(img/new.jpg) center;
+    background-size: cover;
+    visibility: hidden;
+    transition: all ease-in-out .4s;
+}
+#email{
+    width: 100%;
+    padding: 3px 0;
+    border: 1px solid black;
+    border-radius: .5rem;
+    margin: 5px;
+    outline: none;
+}
+.submit{
+    width: 100%;
+    padding: 3px 0;
+    border: 1px solid black;
+    border-radius: .5rem;
+    margin: 5px;
+    outline: none;
+}
+.close{
+    width: 50%;
+    padding: 3px 20px;
+    border: 1px solid black;
+    border-radius: .5rem;
+    margin: 5px;
+    outline: none;
+    margin-left: 90px;
+}
+.active.popup-container{
+    visibility: visible;
+    opacity: 1;
+}
